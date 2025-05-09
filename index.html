@@ -1,99 +1,78 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>びわ湖電池 絵本</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>びわ湖電池キッズ</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #f0f8ff;
+      font-family: "Arial", sans-serif;
+      background: #e0f7fa;
+      color: #004d40;
       margin: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      padding: 0;
     }
-    h1 {
-      text-align: center;
-      margin-top: 1em;
-      color: #2b5d7b;
-    }
-    #book {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin: 2em;
-    }
-    img {
-      width: 80vw;
-      max-width: 800px;
-      height: auto;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      border-radius: 8px;
-    }
-    button {
-      margin: 1em;
-      padding: 0.5em 1em;
-      font-size: 1.2em;
-      border: none;
-      background-color: #4a90e2;
+    header {
+      background: #00acc1;
       color: white;
-      border-radius: 4px;
-      cursor: pointer;
+      padding: 1em;
+      text-align: center;
     }
-    button:disabled {
-      background-color: #ccc;
+    nav {
+      background: #b2ebf2;
+      padding: 0.5em;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1em;
+      color: #00796b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+    }
+    .hero img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background: #004d40;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
     }
   </style>
 </head>
 <body>
-  <h1>びわ湖電池 絵本</h1>
-  <div id="book">
-    <img id="page" src="images/水滴キャラクターと太陽の仲間たち" alt="絵本ページ">
-    <div>
-      <button id="prev">前のページ</button>
-      <button id="next">次のページ</button>
+  <header>
+    <h1>びわ湖電池キッズ</h1>
+    <p>〜 びわ湖の水を1cmだけ、おかりします 〜</p>
+  </header>
+  <nav>
+    <a href="about.html">でんちってなあに？</a>
+    <a href="story.html">1cmのおはなし</a>
+    <a href="ehon.html">みんなのえほん</a>
+  </nav>
+  <main>
+    <div class="hero">
+      <img src="images/びわ湖電池イメージ.jpg" alt="びわ湖電池のイメージ">
+      <h2>ようこそ！ びわ湖の電池のせかいへ</h2>
+      <p>
+        びわ湖の水を、ちょっとだけつかって、
+        よるにひつようなでんきをつくるしくみを、
+        いっしょにかんがえてみよう！
+      </p>
     </div>
-  </div>
-
-  <script>
-    const pages = [
-      "images/水滴キャラクターと太陽の仲間たち.jpg",
-      "images/びわ湖とびわっちの冒険.jpg",
-      "images/ビワッチとゴンドラちゃんの朝.jpg",
-      "images/雲のキャラクターたちの対話.jpg",
-      "images/雲とゴンドラのひより.jpg",
-      "images/ゴンドラちゃんと闇の一団.jpg",
-      "images/エネルギー補充の冒険.jpg",
-      "images/電池先生の授業.jpg",
-      "images/エレガントなバッテリー教授.jpg"
-    ];
-    let currentPage = 0;
-
-    const pageImg = document.getElementById("page");
-    const prevBtn = document.getElementById("prev");
-    const nextBtn = document.getElementById("next");
-
-    function updatePage() {
-      pageImg.src = pages[currentPage];
-      prevBtn.disabled = currentPage === 0;
-      nextBtn.disabled = currentPage === pages.length - 1;
-    }
-
-    prevBtn.addEventListener("click", () => {
-      if (currentPage > 0) {
-        currentPage--;
-        updatePage();
-      }
-    });
-
-    nextBtn.addEventListener("click", () => {
-      if (currentPage < pages.length - 1) {
-        currentPage++;
-        updatePage();
-      }
-    });
-  </script>
+  </main>
+  <footer>
+    <p>&copy; 2025 びわ湖電池プロジェクト キッズ部門</p>
+  </footer>
 </body>
 </html>
