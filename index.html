@@ -1,78 +1,110 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>びわ湖電池キッズ</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>びわ湖電池プロジェクト - Adults</title>
   <style>
     body {
-      font-family: "Arial", sans-serif;
-      background: #e0f7fa;
-      color: #004d40;
+      font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
       padding: 0;
+      background: #f5f5f5;
+      color: #333;
     }
     header {
-      background: #00acc1;
+      background-color: #263238;
       color: white;
-      padding: 1em;
+      padding: 1.5em;
       text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
     }
     nav {
-      background: #b2ebf2;
-      padding: 0.5em;
+      background-color: #455a64;
       text-align: center;
+      padding: 0.8em 0;
     }
     nav a {
+      color: white;
       margin: 0 1em;
-      color: #00796b;
       text-decoration: none;
       font-weight: bold;
     }
     main {
       padding: 2em;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .hero {
-      text-align: center;
+    h2 {
+      color: #1b5e20;
     }
-    .hero img {
-      max-width: 100%;
-      height: auto;
+    .intro {
+      font-size: 1.2em;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 2em;
+      padding: 1em 2em;
+      background: #00796b;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
     }
     footer {
-      background: #004d40;
-      color: white;
       text-align: center;
       padding: 1em;
+      background: #263238;
+      color: white;
       margin-top: 2em;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>びわ湖電池キッズ</h1>
-    <p>〜 びわ湖の水を1cmだけ、おかりします 〜</p>
+    <h1>びわ湖電池プロジェクト</h1>
+    <p>1cmの水が、未来を照らす。</p>
   </header>
   <nav>
-    <a href="about.html">でんちってなあに？</a>
-    <a href="story.html">1cmのおはなし</a>
-    <a href="ehon.html">みんなのえほん</a>
+    <a href="#about">プロジェクト概要</a>
+    <a href="#contest">コンテスト</a>
+    <a href="kidsindex.html">👶 キッズページへ</a>
   </nav>
   <main>
-    <div class="hero">
-      <img src="images/びわ湖電池イメージ.jpg" alt="びわ湖電池のイメージ">
-      <h2>ようこそ！ びわ湖の電池のせかいへ</h2>
-      <p>
-        びわ湖の水を、ちょっとだけつかって、
-        よるにひつようなでんきをつくるしくみを、
-        いっしょにかんがえてみよう！
+    <section id="about">
+      <h2>プロジェクトについて</h2>
+      <p class="intro">
+        再生可能エネルギーの不安定さを補い、災害時のバックアップにもなる――
+        「びわ湖電池」は、琵琶湖の水位をたった1cm変えるだけで、
+        最大80GWhのエネルギーを蓄えることができる自然型揚水蓄電構想です。
       </p>
-    </div>
+      <p>
+        本プロジェクトは、びわ湖を“下池”に、日本の高台を“上池”とすることで、
+        CO₂を出さずに再エネを夜間へスライドし、日本のエネルギー自立と災害耐性を向上させることを目指します。
+      </p>
+    </section>
+
+    <section id="contest">
+      <h2>上池設計コンテスト</h2>
+      <p>
+        「びわ湖の水を1cmだけ、お借りします。」をテーマに、
+        1基分の上池（200m×200m×10.5m・落差100m）を自由に設計し、
+        地形や地域性を活かした提案を募集しています。
+      </p>
+      <p>
+        市民・学生・技術者問わず、すべての人が対象です。
+        詳細はコンテスト案内をご覧ください。
+      </p>
+      <a class="btn" href="README.html">詳細を見る →</a>
+    </section>
   </main>
   <footer>
-    <p>&copy; 2025 びわ湖電池プロジェクト キッズ部門</p>
+    <p>&copy; 2025 Biwako Denchi Project</p>
   </footer>
 </body>
 </html>
