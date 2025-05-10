@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ダム位置エネルギー計算</title>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+    input { width: 100px; margin: 5px; }
+    .output { font-weight: bold; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>ダムの容積・位置エネルギー計算</h2>
+
+  <label>縦（m）：<input type="number" id="length" step="0.1"></label><br>
+  <label>横（m）：<input type="number" id="width" step="0.1"></label><br>
+  <label>深さ（m）：<input type="number" id="depth" step="0.1"></label><br>
+  <label>有効高さ（m）：<input type="number" id="effectiveHeight" step="0.1"></label><br>
+
+  <button onclick="calculate()">計算する</button>
+
+  <div class="output" id="volumeResult">容積（m³）：</div>
+  <div class="output" id="energyResult">位置エネルギー（kWh）：</div>
+
+  <script>
+    function calculate() {
+      const length = parseFloat(document.getElementById('length').value) || 0;
+      const width = parseFloat(document.getElementById('width').value) || 0;
+      const depth = parseFloat(document.getElementById('depth').value) || 0;
+      const height = parseFloat(document.getElementById('effectiveHeight').value) || 0;
+      const volume = length * width * depth; // m³
+      const massTons = volume; // トン ≒ m³（= 水の密度 1t/m³）
+      const mass10kt = massTons / 10000; // 万トン
+      const energyJoules = massTons * 1000 * 9.8 * height; // kg に直して × g × h
+      const energyGWh = energyJoules / 3.6e12; // J → GWh
+
+      document.getElementById('volumeResult').textContent = `容積（万トン）：${mass10kt.toFixed(3)} 万トン`;
+      document.getElementById('energyResult').textContent = `位置エネルギー（GWh）：${energyGWh.toFixed(6)} GWh`;
+    }
+  </script>
+</body>
+</html>
