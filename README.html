@@ -3,194 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>README - びわ湖電池プロジェクト</title>
+  <title>びわ湖電池プロジェクト™</title>
   <style>
     body {
-      font-family: 'Helvetica Neue', sans-serif;
-      background: #fafafa;
-      color: #212121;
-      margin: 0;
-      padding: 0;
+      font-family: sans-serif;
+      line-height: 1.6;
+      margin: 2em;
+      background-color: #f4f9ff;
     }
-    header {
-      background: #37474f;
-      color: white;
-      padding: 2em;
-      text-align: center;
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 0.2em;
     }
-    main {
-      padding: 2em;
-      max-width: 900px;
-      margin: auto;
-      background: white;
-    }
-    h1, h2 {
-      color: #1e88e5;
-    }
-    section {
-      margin-bottom: 2em;
-    }
-    footer {
-      background: #263238;
-      color: white;
-      text-align: center;
-      padding: 1em;
+    h2 {
+      font-size: 1.3em;
+      border-bottom: 1px solid #ccc;
       margin-top: 2em;
     }
-    a {
-      color: #1565c0;
-      text-decoration: none;
+    ul {
+      padding-left: 1.2em;
+    }
+    code {
+      background: #eee;
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
+    }
+    .qrcodes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      margin-top: 1em;
+    }
+    .qrcodes div {
+      text-align: center;
+      max-width: 150px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>README</h1>
-    <p>びわ湖電池プロジェクトについて</p>
-  </header>
-  <main>
-    <section>
-      <h2>📘 プロジェクト概要</h2>
-<p>
-  「びわ湖電池」は、琵琶湖の水位を3cmだけ上げ下げすることで、
-  最大16GWhのエネルギーを蓄えることが可能な日本型の自然揚水蓄電システムです。
-  「自然揚水蓄電システム」とは、自然の地形を利用したダムに、
-  昼間の太陽光発電の電力で水をくみ上げ、夜間にそのダムから水力発電を行う仕組みです。
-  また、びわ湖が**淡水湖であること**は、揚水設備の腐食やスケール（堆積物）を抑えるうえでも大きな利点です。
-  これは**海水を用いる場合に比べ、設備寿命を延ばし、保守コストを大幅に下げられる可能性**を意味します。
+  <h1>びわ湖電池プロジェクト™</h1>
+  <p>このリポジトリは、地域の自然エネルギーを活用するための教育・研究・体験的なコンテンツを提供します。</p>
 
-</p>
-      <ul>
-        <li>琵琶湖は日本最大の淡水湖で面積(669.26㎢)と貯水量(27.5㎦)があります</li>
-        <li>その水位3cmは水量に換算して約２０００万トン</li>
-        <li>その水量を300m持ち上げると16GWhのエネルギーを蓄えることができます</li>
-        <li>１GWは標準的な原子力発電機一機分で16GWhはその発電機で16時間運転する電力量です</li>
-        <li>びわ湖の周囲には最高1000メートルを超える山もあり揚水発電の好条件がととのっています</li>
-<!--        <li>びわ湖が淡水であることも揚水発電の設備寿命に対して大きなメリットです</li> -->
-     </ul>
-    </section>
-<section>
-  <h2>🌍 目的</h2>
-  <ul style="list-style: none; padding: 0;">
-    <li style="margin-bottom: 1em;">
-      <strong>✅ 再生可能エネルギーの有効活用</strong><br>
-      <span style="color: #555;">（太陽光、風力などの自然発電の補完の役割）</span>
-    </li>
-    <li style="margin-bottom: 1em;">
-      <strong>✅ 夜間の電力安定供給</strong><br>
-      <span style="color: #555;">（太陽光発電が得られない夜間に静かに水力発電する）</span>
-    </li>
-    <li style="margin-bottom: 1em;">
-      <strong>✅ 災害時のブラックスタート電源</strong><br>
-      <span style="color: #555;">（電力管内にまったく電源がないときにも運転開始できる「マッチ」の役割）</span>
-    </li>
-    <li>
-      <strong>✅ CO₂排出ゼロの未来社会づくり</strong><br>
-      <span style="color: #555;">（石炭やLNGによる火力発電を減らし、再エネの真の自立を支える）</span>
-    </li>
-  </ul>
-</section>
-<section>
-  <h2>🗾 滋賀県民への提言</h2>
-  <p>
-    滋賀県には現在、大規模な発電所は存在せず、主な電源は太陽光や小水力といった自然エネルギーに限られています。<br>
-    自県内の電力自給力は、近隣府県と比べても限定的であり、他地域からの供給に依存しています。<br>
-    しかし今、電力は「エネルギーのかなめ」として、AI・データセンター・脱炭素社会の推進に不可欠です。
-  </p>
-  <p>
-    電力の最大の特徴は「オンデマンド」。つまり、使うその瞬間に供給しなければならず、ためておくことが難しい点にあります。<br>
-    災害やピーク需要、再生可能エネルギーの不安定性などを踏まえると、滋賀県にも<strong>持続可能で安定した地域内エネルギー基盤</strong>が求められます。
-  </p>
-  <p>
-    私たちの提案する「びわ湖電池」は、琵琶湖の水位を3cm変えるだけで、1,600万世帯分の夜間照明を支えるエネルギーを確保できる、<strong>地形と自然を活かした蓄電モデル</strong>です。
-  </p>
-  <p>
-    滋賀県から、未来を照らすエネルギー革新を。
-  </p>
-</section>
-<section>
-  <h2>🏢 データセンター誘致への展望</h2>
-  <p>
-    「びわ湖電池」によって滋賀県内の電力インフラが補強されれば、<strong>日本でも数少ない“地産地蓄”の電力供給地</strong>が実現します。<br>
-    この特性を活かし、滋賀県は<strong>次世代データセンターの理想的な立地候補</strong>として、以下のような強みを発揮できます。
-  </p>
-
+  <h2>📂 主な構成</h2>
   <ul>
-    <li><strong>安定した電源</strong>：びわ湖電池による揚水蓄電により、再エネ由来の夜間電力も安定供給可能</li>
-    <li><strong>冷却資源が豊富</strong>：琵琶湖の淡水は塩害がなく、蒸発冷却や水冷に理想的（北海道は空気冷却中心）</li>
-    <li><strong>交通・通信の要衝</strong>：関西・中京・北陸の中間で新幹線・高速道路・幹線通信が集中</li>
-    <li><strong>災害リスクが比較的低い</strong>：地震・津波・豪雪の影響が少なく、地形も安定</li>
-    <li><strong>土地利用の柔軟性</strong>：市街地から離れた山間部などに用地確保の可能性</li>
+    <li><code>index.html</code> - トップページ、全体概要</li>
+    <li><code>correlationchart.html</code> - 気象や曜日と電力価格の相関分析ツール</li>
+    <li><code>data/</code> - 実際の気象・電力価格データ (JSON形式)</li>
   </ul>
 
-  <p>
-    これらの条件を総合すると、滋賀県は<strong>電源・冷却・地の利</strong>を兼ね備えた、日本でも数少ない「情報基盤インフラの中核候補地」です。<br>
-    実際に、北海道では“雪による冷却”を武器にデータセンター誘致が進められていますが、<strong>滋賀県は通年使用可能な淡水冷却＋電力自立モデル</strong>という別軸の強みを提示できます。
-  </p>
-
-  <p>
-    将来、びわ湖周辺に「自然冷却型・ゼロカーボン・分散型」データセンター群が展開すれば、<br>
-    滋賀県は電力と情報の両面で、<strong>近畿の“インフラ・ハブ”</strong>として新しい役割を担うことになります。
-  </p>
-
-  <p>
-    熱くなりがちなAIも、冷たい淡水にひかれて、静かなびわ湖のほとりへ引っ越してくるかもしれません。
-  </p>
-</section>
-<section>
-  <h2>🧭 コンテスト</h2>
-  <p>
-    上池を自由に設計・提案していただく「びわ湖電池 上池設計コンテスト」を開催予定です。<br>
-    市民・学生・技術者・研究者・AI、すべて歓迎します。<br>
- <em>※AIさんも電気たくさん使うので、ぜひ参加してくださいね。</em><br>
-     <a href="contest.html">▶ コンテストへ</a>
-  </p>
-  <p>
-    設計支援ツールとして、地図上をクリックすると「標高差」「発電量」「琵琶湖水位差」「最短水際までの距離」が表示される、<br>
-    簡単操作の「びわ湖3cm電池シミュレータ」をご用意しました。
-  </p>
-  <p>
-    <a class="btn" href="https://pgmatsuyama.github.io/biwako-3cm-energy/index.html" target="_blank">
-      💧 地図で試す → びわ湖3cmシミュレータ
-    </a>
-  </p>
-</section>
-<section>
   <h2>🔗 関連リンクとQRコード</h2>
-  <div style="display: flex; justify-content: center; gap: 2em; flex-wrap: wrap; text-align: center;">
-    
-    <!-- びわ湖3cmシミュレータ -->
+  <div class="qrcodes">
     <div>
-      <img src="images/qr_biwako_sim.png" alt="3cmシミュレータ QR" style="width: 120px; height: auto;">
-      <p style="margin: 0.5em 0;"><strong>びわ湖3cmシミュレータ</strong></p>
-      <a href="https://pgmatsuyama.github.io/biwako-3cm-energy/" target="_blank">
-        https://...biwako-3cm-energy/
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://pgmatsuyama.github.io/biwako-denchi-kids/" alt="Kids QR">
+      <p style="margin: 0.5em 0;"><strong>びわ湖電池キッズ</strong></p>
+      <a href="https://pgmatsuyama.github.io/biwako-denchi-kids/" target="_blank">キッズページ</a>
+    </div>
+    <div>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://pgmatsuyama.github.io/biwako-denchi-economy/correlationchart.html" alt="相関 QR">
+      <p style="margin: 0.5em 0;"><strong>電力×天気 相関図</strong></p>
+      <a href="https://pgmatsuyama.github.io/biwako-denchi-economy/correlationchart.html" target="_blank">correlationchart</a>
+    </div>
+    <div>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://pgmatsuyama.github.io/biwako-denchi-economy/charttest.html" alt="チャート QR">
+      <p style="margin: 0.5em 0;"><strong>電力価格チャート</strong></p>
+      <a href="https://pgmatsuyama.github.io/biwako-denchi-economy/charttest.html" target="_blank">charttest</a>
+    </div>
+    <div>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://pgmatsuyama.github.io/biwako-denchi-economy/" alt="経済 QR">
+      <p style="margin: 0.5em 0;"><strong>びわ湖電池の経済学</strong></p>
+      <a href="https://pgmatsuyama.github.io/biwako-denchi-economy/" target="_blank">
+        https://...biwako-denchi-economy/
       </a>
     </div>
-
-    <!-- コンテスト -->
-    <div>
-      <img src="images/qr_contest.png" alt="コンテスト QR" style="width: 120px; height: auto;">
-      <p style="margin: 0.5em 0;"><strong>コンテスト</strong></p>
-      <a href="https://pgmatsuyama.github.io/biwako-denchi-kids/contest.html" target="_blank">
-        https://.../contest.html
-      </a>
-    </div>
-
-    <!-- メインページ -->
-    <div>
-      <img src="images/qr_main.png" alt="メインページ QR" style="width: 120px; height: auto;">
-      <p style="margin: 0.5em 0;"><strong>メインページ</strong></p>
-      <a href="https://pgmatsuyama.github.io/biwako-denchi-kids/" target="_blank">
-        https://...biwako-denchi-kids/
-      </a>
-    </div>
-
   </div>
-</section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Biwako Denchi Project</p>
+
+  <footer style="margin-top: 3em; font-size: 0.9em; color: #555;">
+    <p><strong>びわ湖電池プロジェクト™</strong></p>
+    <p>出典：</p>
+    <ul>
+      <li>電力スポット価格：<a href="https://www.jepx.jp/" target="_blank">JEPX（日本卸電力取引所）関西エリア</a></li>
+      <li>気象データ：<a href="https://www.data.jma.go.jp/" target="_blank">気象庁 大阪地点の気象統計データ</a></li>
+    </ul>
   </footer>
 </body>
 </html>
